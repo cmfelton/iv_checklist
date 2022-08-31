@@ -37,7 +37,7 @@ library(retrodesign)
 
 ##READING IN DATA
 
-sibs <- readRDS("conley.rds")
+sibs <- readRDS("cg2006.rds")
 
 ##for .csv file:
 #df_name <- read_csv("filename")
