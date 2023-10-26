@@ -7,8 +7,10 @@ Comments are very welcome! You can e-mail us at christopher_felton@gse.harvard.e
 
 # Obtaining the Data
 
-Obtaining the data requires an IPUMS account. Go to https://usa.ipums.org/usa-action/variables/group to create an extract using the 1990 Census 5% microdata. We list the exact variables used in cg2006_IPUMS_summary.pdf. We exported the data as a .csv file and named it "census.csv". If you use a different name, be sure to change it in cg2006tidying.R. cg2006tidying.R prepares the data for the main IV analysis, and iv_checklist.R carries out the procedures we describe in the checklist (not including things like stating assumptions or clarifying who the compliers are). We were unable to replicate Conley and Glauber's (2006) results exactly, but our treatment effect and standard error estimates are very close to theirs. 
+Obtaining the data requires an IPUMS account. Go to https://usa.ipums.org/usa-action/variables/group to create an extract using the 1990 Census 5% microdata. We list the exact variables used in cg2006_IPUMS_summary.pdf. We exported the data as a .csv file and named it ``census.csv``. If you use a different name, be sure to change it in ``cg2006tidying.R``. 
 
 # Running the Code
 
 The easiest way to run everything will be to place ``IV_checklist.Rproj`` into a directory with subfolders "data" and "code." You can download "code" here. Create a new folder called "data" and follow the directions above to obtain ``census.csv``. Then put it into "data" and launch ``IV_checklist.Rproj``. The scripts use the ``here`` package, so you won't have to specify a working directory.
+
+``cg2006tidying.R`` prepares the data for the main IV analysis, and ``iv_checklist.R`` carries out the procedures we describe in the checklist (not including things like stating assumptions or clarifying who the compliers are). We were unable to replicate Conley and Glauber's (2006) results exactly, but our treatment effect and standard error estimates are very close to theirs. 
